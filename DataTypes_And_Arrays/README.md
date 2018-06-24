@@ -41,7 +41,7 @@
 say we want to convert int to byte ,
 byte b ; int a;
 b = (byte) a;
-here , modulo 256 value is assigned to b , if value of a is not in byte's range.
+here , modulo 256 (range of byte) value is assigned to b , if value of a is not in byte's range.
 ```
   
 # Arrays

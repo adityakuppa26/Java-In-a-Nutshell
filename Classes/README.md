@@ -40,5 +40,35 @@ Space allocated for objects is released automatically when no reference to that 
   
 * finalize () method defines the specific actions that will occur when an object is just about to be reclaimed by the garbage collector. It is usually used to free the non-JAVA resources held by the object.  
   
+**Overloading Methods**
+  
+* Same method names with different signatures.  
+* Constructors can be overloaded as well.  
+  
+**Access Control**
+  
+* public : can be used by code outside yhe class.
+* private : cant be used by the code outside the class.  
+* protected : is used with reference to inheritance.  
+* default : can be used by the code in the same package.  
+  
+**Static keyword**
+  
+* to use a class member without reference to a specific instance i.e independent of any class object.  
+* for static variables, only copy of it exists and all instances share it .  
+* for static methods :  
+```
+-> they can only call other static methods.
+-> they must only access static data.
+-> they cant refer to "this" or "super" in anyway.
+```
+  
+**Nested classes**
+  
+* objects of inner class can be created only within the scope of outer class , to create an inner class object from outside the outer class , the full qualified name of the inner class must be used.  
+* inner class can access members of outer class but not vice-versa.  
+  
+
+  
 
   

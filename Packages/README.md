@@ -12,3 +12,5 @@ Any class written under it is saved in that package.
 * JAVA uses file system directories to store packages.  
   
 **Access Protection**
+  
+![package access]("Table.jpg")

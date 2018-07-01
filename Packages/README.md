@@ -14,3 +14,15 @@ Any class written under it is saved in that package.
 **Access Protection**
   
 ![package access](Table.jpg)
+   
+**Import statement**
+  
+* to bring certain classes or entire package into visibility.  
+* Syntax:
+```
+import package_name.sub_package.class_name;   // for a particular class
+import package_name.sub_package.*;            // imports all classes in the sub_package
+```
+  
+* import java.lang; is the default import statement automatically included in all the programs we write.  
+* import statement for a class is optional , we can rather use a fully qualified path to the class.

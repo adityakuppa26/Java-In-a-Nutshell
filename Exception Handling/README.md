@@ -17,3 +17,10 @@ finally
   // block of code executed after try/catch block
 }
 ```
+  
+**Exception Types**
+  
+* All exception types are subclasses of class Throwable.  
+* Throwable class has two major subclasses : Exception and Error.  
+* Exception class deals with the exceptional conditions that user program is expected to catch.  
+* Error class deals with the exceptions that cant be caught by user program, these are usually only handled by the JVM.  

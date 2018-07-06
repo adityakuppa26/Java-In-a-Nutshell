@@ -29,7 +29,7 @@ finally
   
 * When the user doesnt catch an exception , yhe JVM 's default handler handles the thrown exception.  
 * User catches and handles exception beacuse:  
--> allows him to fix the error manually.
+-> allows him to fix the error manually.  
 -> prevents program from automatically terminating.  
   
 **Multiple Catch**

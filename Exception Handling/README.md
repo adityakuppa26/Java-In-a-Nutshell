@@ -27,7 +27,7 @@ finally
   
 **Uncaught Exceptions**
   
-* When the user doesnt catch an exception , yhe JVM 's default handler handles the thrown exception.  
+* When the user doesnt catch an exception , the JVM 's default handler handles the thrown exception.  
 * User catches and handles exception beacuse:  
 -> allows him to fix the error manually.  
 -> prevents program from automatically terminating.  

@@ -61,3 +61,38 @@ catch(ArithmeticException e)
   ....    // catches the thrown exception
 }
 ```
+  
+**Throws**
+  
+* when a method is capable of causing an exception it does not handle, it must specify it so that callers can guard themselves against it.  
+* if not mentioned , it is caught by the default handler and program doesn't compile (in case of checked exceptions).  
+* Example :
+```
+void demo() throws ArithmeticException
+{
+  ..... // body
+  throw new ArithmeticException;
+}
+main()
+{
+  try
+  {
+    demo();
+  }
+  catch(ArithmeticException e)
+  {
+    .......
+  }
+}
+```
+  
+**Finally**
+  
+* create a block of code that will be executed after try/catch blocks complete.  
+* it is executed if or not a catch exists , if or not an exception occurs or even when no match for a catch is found.  
+* Usually used to free up resources held or to close file handlers.  
+  
+**Types Of Exceptions**
+  
+* Unchecked : need not be included in any method's throws list, compiler doesn't check if a method handles or throws these exceptions.  
+* Checked : must be included in throws list , else the program is not compiled.  

@@ -2,6 +2,7 @@
   
 * A multi threaded program contains two or more parts that can run concureently. Each part of such program is called a thread.  
 * JAVA thread model : thread priority , synchronization, messaging  
+  
 **Main Thread**
 ```
 -> when a java program starts , one thread begins running immediately , this is called the main thread.  
@@ -11,7 +12,7 @@
   
 **Creating a Thread**
   
-**Using Runnable interface**
+**Using Runnable interface**  
 one needs to implement only one method of this interface i.e the public void run() method.  
 ```
 example :
@@ -50,5 +51,4 @@ class Demo
     }
   }
 }
-```
-O/P : 
+``` 

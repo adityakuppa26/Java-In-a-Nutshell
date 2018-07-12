@@ -52,3 +52,54 @@ class Demo
   }
 }
 ``` 
+  
+**Extending Thread Class**
+  
+Must override the run() method.
+```
+example :
+class Demo extends Thread
+{
+  Demo()
+  {
+    super("demo");
+    System.out.println("child"+this);
+    start();
+  }
+  public void run()
+  {
+    ......
+  }
+}
+class ExtThread{
+main()
+{
+  new Demo();
+  try
+  {
+    ...
+  }
+  catch()
+  {
+  ..
+  }
+}
+}
+```
+  
+**isAlive and join**
+  
+* main() must wait until children threads end. How does the main thread know when they end ?  
+* There are two methods for the above question : 
+```
+-> final boolean isAlive() : tells if a thread is still existing or not
+-> final void join() throws InterruptedException : waits until the thread on which it is called terminates
+```
+  
+**Thread Priority**
+  
+* 1-10  
+* MIN_PRIORITY(1) , MAX_PRIORITY(10), NORM_PRIORITY(5) are the instance variables of Thread class.  
+* final void setPriority(int level) : to set the priority of a thread    
+* final int getPriority() : gives the alloted priority of a thread  
+  

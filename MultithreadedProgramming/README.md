@@ -103,3 +103,8 @@ main()
 * final void setPriority(int level) : to set the priority of a thread    
 * final int getPriority() : gives the alloted priority of a thread  
   
+**Synchronization**
+  
+* when two or more threads need access to the shared resources at the same time.  
+* uses monitors.  
+  

@@ -108,4 +108,28 @@ main()
 * when two or more threads need access to the shared resources at the same time.  
 * uses monitors.  
   
-** **
+**Synchronized Methods**
+  
+* while a thread is inside a synchronised method , all other threads that try to call it on the same instance have to wait , until the inside thread is done.  
+* append "synchronized" beofre a method, to make it a synchronized method of a class.  
+  
+**Synchronized statement**
+  
+* say you want a synchronized access to objects of a class that has no synchronized methods , this class was created by a third party and you dont have source code.  
+* put the calls to the methods defined by this class inside a "synchronized" block.  
+```
+synchronized(object)
+{
+  // calls 
+}
+```
+  
+**Interthread Communication**
+  
+* to avoid polling , eg: producer-consumer problem  
+* provides 3 methods :  
+```
+wait() : calling thread goes to sleep until notified.
+notify() : wakes up a thread that called wait() on the same object.
+notifyAll() : wakes up all the threads that called wait() on the same object.
+```

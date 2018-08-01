@@ -44,5 +44,11 @@ class Teststringcomparison3{
 The String compareTo() method compares values lexicographically and returns an integer value that describes if
 first string is less than, equal to or greater than second string.
 ```
+**String Buffer class**  
+* Java StringBuffer class is used to create mutable (modifiable) string. The StringBuffer class in java is same as String class except it is mutable i.e. it can be changed.  
+* Java StringBuffer class is thread-safe i.e. multiple threads cannot access it simultaneously. So it is safe and will result in an order.  
   
-* 
+**String Builder class**
+* Java StringBuilder class is used to create mutable (modifiable) string. The Java StringBuilder class is same as StringBuffer class except that it is non-synchronized.  
+* StringBuffer is less efficient than StringBuilder.  
+
